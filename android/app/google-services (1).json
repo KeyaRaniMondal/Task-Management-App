@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "263592211845",
+    "project_id": "tma-backend",
+    "storage_bucket": "tma-backend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263592211845:android:58a1ec931145e9ca3e00ec",
+        "android_client_info": {
+          "package_name": "com.example.tma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnkAVFYUyAL77G_k8Nld9S3Aojws8Hbt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
