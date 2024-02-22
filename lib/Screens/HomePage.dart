@@ -66,6 +66,7 @@ class _MyHomePageState extends State<MyHomePage>{
       child: Icon(Icons.add,color: kdark,size: 25,),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      body: _pages[activeIndex],
     );
    // return const Placeholder();
   }

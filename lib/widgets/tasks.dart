@@ -9,5 +9,4 @@ class Tasks extends StatelessWidget{
       child: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),mainAxisSpacing:10,crossAxisSpacing:10,itemBuilder: (context, index) => );
     );
   }
-}
-*/
+}*/
