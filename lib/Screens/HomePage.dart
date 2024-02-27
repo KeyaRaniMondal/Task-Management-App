@@ -84,11 +84,11 @@ AppBar _buildAppBar() {
           width: 45,
           decoration: BoxDecoration(
             color: kwhite,
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(20),
           ),
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(10),
-            child: Image.asset('assets/pic.jpg'),//profile
+            borderRadius: BorderRadius.circular(100),
+            child: Image.asset('assets/pic1.jpg'),//profile
           ),
         ),
         SizedBox(width: 10),
@@ -118,7 +118,7 @@ class HomePage extends StatelessWidget{
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.only(right: 8.0,left: 8.0,top: 20.0),
+          padding: EdgeInsets.only(right: 8.0,left: 8.0,top: 15.0),
           child: GoPremium(),
           ),
           Container(

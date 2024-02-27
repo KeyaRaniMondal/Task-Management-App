@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:tma/widgets/constant.dart';
 
@@ -81,6 +79,15 @@ class _GoPremiumState extends State<GoPremium> {
                       ),
                     ),
                   ],
+                ),
+                Expanded(child: Container()),
+                IconButton(
+                  icon: const Icon(
+                    Icons.arrow_forward_ios,
+                    color: Color.fromARGB(255, 22, 23, 22),
+                    size: 30,
+                  ),
+                  onPressed: (){},
                 ),
               ],
             ),
