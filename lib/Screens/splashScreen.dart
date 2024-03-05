@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tma/Screens/HomePage.dart';
+import 'package:tma/Screens/ProfilePage.dart';
 import 'package:tma/widgets/constant.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -14,6 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+          backgroundColor: Color.fromARGB(255, 127, 209, 178),
       body: Center(
         child:SingleChildScrollView(
         child: Column(
@@ -21,9 +24,9 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
-              child: Image.asset('assets/screen.jpg'), // screenimage
+              child: Image.asset('assets/pic1.jpg'), // screenimage
             ),
-            SizedBox(height: 16), // Adjust the spacing as needed
+            SizedBox(width: 10), // Adjust the spacing as needed
             Text(
               "Task Management App",
               style: TextStyle(
@@ -49,6 +52,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Navigator.pushAndRemoveUntil(
             context,
             MaterialPageRoute(builder: (context) => widget.child!),
+            // MaterialPageRoute(builder: (context) => HomePage(child: ProfilePage())),
             (route) => false,
           );
         }
