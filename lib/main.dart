@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';//imports widgets & tools design framewor
 import 'package:flutter/services.dart';
 import 'package:tma/Screens/HomePage.dart';
 import 'package:tma/Screens/ProfilePage.dart';
+import 'package:tma/Screens/login_page.dart';
+import 'package:tma/Screens/SignUpPage.dart';
 import 'package:tma/Screens/splashScreen.dart';
 
 void main() => runApp(MyApp()); //starts execution,run app is a function and MyApp is a class passed as an instance
@@ -23,7 +25,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:SplashScreen(child: MyHomePage(),),
+      //home:SplashScreen(child: MyHomePage(),),
+      home:SplashScreen(child: LoginPage(),),
       //home: MyHomePage(),
     );
   }

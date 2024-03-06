@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tma/Screens/login_page.dart';
+import 'package:tma/Screens/SignUpPage.dart';
 import 'package:tma/widgets/constant.dart';
 import '../widgets/premium.dart';
 import 'ProfilePage.dart';
@@ -10,6 +12,8 @@ class MyHomePage extends StatefulWidget{
 
 class _MyHomePageState extends State<MyHomePage>{
   List<Widget> _pages=[
+    //LoginPage(),
+    //SignUpPage(),
     HomePage(),
     ProfilePage(),
   ];
