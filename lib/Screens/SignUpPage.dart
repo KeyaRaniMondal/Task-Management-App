@@ -90,7 +90,8 @@ class _SignUpPageState extends State<SignUpPage> {
         },
       );
     }
-  }*/
+  }
+}*/
  import 'package:flutter/material.dart';
 
 class SignUpPage extends StatefulWidget {

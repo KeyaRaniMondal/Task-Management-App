@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tma/modals/Task_modal.dart';
 import 'package:tma/widgets/constant.dart';
+import 'package:tma/widgets/tasks.dart';
 import '../widgets/premium.dart';
 import 'ProfilePage.dart';
 
@@ -133,7 +135,7 @@ class HomePage extends StatelessWidget{
                 fontWeight: FontWeight.bold),
             ),
           ),
-          Expanded(child: Container())
+          Expanded(child: Tasks())
       ],
     );
   }

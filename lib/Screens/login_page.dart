@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+/*import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:tma/Screens/HomePage.dart';
@@ -221,12 +221,10 @@ Future<bool> isUserNewInYourDatabase(String email) async {
   } catch (error) {
     print('Error signing in with Google: $error');
   }
-}
-
-} 
+}*/
 
 
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:tma/Screens/HomePage.dart';
 import 'package:tma/Screens/SignUpPage.dart';
 
@@ -350,7 +348,8 @@ class _LoginPageState extends State<LoginPage> {
       );
     }
   }
-}*/
+}
 
 
 
+//}
