@@ -1,5 +1,6 @@
 
 import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';//imports widgets & tools design framework
 import 'package:flutter/services.dart';
@@ -10,7 +11,8 @@ import 'package:tma/Screens/SignUpPage.dart';
 import 'package:tma/Screens/splashScreen.dart';
 
 //void main() => runApp(MyApp()); //starts execution,run app is a function and MyApp is a class passed as an instance
-Future main() async {
+//Future 
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   if(kIsWeb)
   {
@@ -23,7 +25,9 @@ Future main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key}); //myapp class ar constructor,namesd constructor sk
+   MyApp({super.key}); //myapp class ar constructor,namesd constructor sk
+   final emailController=TextEditingController();
+   final passwordController=TextEditingController();
 
   @override
   Widget build(BuildContext context) { //build method,returns UI elements of the app

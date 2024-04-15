@@ -30,7 +30,7 @@ class Task{
             btncolor: kBlue,
             left: 5,
             done: 3,
-            isLast: true,
+            isLast: false,
           ),
                     Task(
             icon: Icons.work,
@@ -40,7 +40,7 @@ class Task{
             btncolor: kYellow,
             left: 1,
             done: 4,
-            isLast: true,
+            isLast: false,
           ),
                     Task(
             icon: Icons.favorite_rounded,
@@ -50,7 +50,7 @@ class Task{
             btncolor:kRed ,
             left: 2,
             done: 6,
-            isLast: true,
+            isLast: false,
           ),
                     Task(
             icon: Icons.person_rounded,
