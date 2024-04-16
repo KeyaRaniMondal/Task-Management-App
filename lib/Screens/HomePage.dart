@@ -1,4 +1,7 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
+import 'package:tma/Screens/MenuPage.dart';
 import 'package:tma/modals/Task_modal.dart';
 import 'package:tma/widgets/constant.dart';
 import 'package:tma/widgets/tasks.dart';
@@ -109,7 +112,11 @@ AppBar _buildAppBar() {
           color: Colors.grey.shade600,
           size: 35,
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(context as BuildContext, 
+          MaterialPageRoute(
+            builder: (context) => const menuPage()));
+        },
       ),
     ],
   );
