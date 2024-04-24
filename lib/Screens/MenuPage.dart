@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:tma/Screens/HelpPage.dart';
 import 'package:tma/Screens/HomePage.dart';
 
 class menuPage extends StatefulWidget{
@@ -47,7 +49,7 @@ class _menuPageState extends State<menuPage>{
               // GestureDetector(
               //   onTap: () {
               //     Navigator.push(
-              //       context,
+              //      context,
               //       MaterialPageRoute(
               //         builder: (context) => const ContactUs(),
               //       ),
@@ -64,20 +66,20 @@ class _menuPageState extends State<menuPage>{
                 height: he * 0.03,
               ),
               
-              //  GestureDetector(
-              //   onTap: (){
-              //     Navigator.push(
-              //       context,
-              //       MaterialPageRoute(
-              //         builder: (context) => HelpPage(),
-              //       ));},
-              //    child: Text(
-              //     'Help',
-              //     style: TextStyle(
-              //       fontSize: 30,
-              //     ),
-              //                ),
-              //  ),
+               GestureDetector(
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HelpPage(),
+                    ));},
+                 child: Text(
+                  'Help',
+                  style: TextStyle(
+                    fontSize: 30,
+                  ),
+                             ),
+               ),
               SizedBox(
                 height: he * 0.03,
               ),
@@ -97,15 +99,15 @@ class _menuPageState extends State<menuPage>{
               SizedBox(
                 height: he * 0.03,
               ),
-              // GestureDetector(
-              //   onTap: () => SystemNavigator.pop(),
-              //   child: const Text(
-              //     'Logout',
-              //     style: TextStyle(
-              //       fontSize: 30,
-              //     ),
-              //   ),
-              // ),
+              GestureDetector(
+                onTap: () => SystemNavigator.pop(),
+                child: const Text(
+                  'Logout',
+                  style: TextStyle(
+                    fontSize: 30,
+                  ),
+                ),
+              ),
             ],
           ),
         ));
