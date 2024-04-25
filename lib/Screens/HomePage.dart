@@ -21,9 +21,9 @@ class _MyHomePageState extends State<MyHomePage>{
     ProfilePage(),
   ];
   int activeIndex=0;
-  Widget build(BuildContext context){
+  Widget build (BuildContext context){
     return Scaffold(
-      appBar: _buildAppBar(),
+      appBar: _buildAppBar(context),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           borderRadius: const BorderRadius.only(
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage>{
   }
 }
 
-AppBar _buildAppBar() {
+AppBar _buildAppBar(BuildContext context) {
   return AppBar(
     backgroundColor: kwhite,
     elevation: 0,
@@ -115,7 +115,7 @@ AppBar _buildAppBar() {
         onPressed: () {
           Navigator.push(context as BuildContext, 
           MaterialPageRoute(
-            builder: (context) => const menuPage()));
+            builder: (context) =>  menuPage()));
         },
       ),
     ],

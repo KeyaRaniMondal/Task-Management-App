@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:tma/Screens/ContactPage.dart';
 import 'package:tma/Screens/HelpPage.dart';
 import 'package:tma/Screens/HomePage.dart';
 
@@ -46,22 +47,23 @@ class _menuPageState extends State<menuPage>{
               SizedBox(
                 height: he * 0.13,
               ),
-              // GestureDetector(
-              //   onTap: () {
-              //     Navigator.push(
-              //      context,
-              //       MaterialPageRoute(
-              //         builder: (context) => const ContactUs(),
-              //       ),
-              //     );
-              //   },
-              //   child: Text(
-              //     'Contact Us',
-              //     style: TextStyle(
-              //       fontSize: 30,
-              //     ),
-              //   ),
-              // ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                   context,
+                    MaterialPageRoute(
+                      builder: (context) => const ContactUs(),
+                    ),
+                  );
+                },
+                child: 
+              Text(
+                  'Contact Us',
+                  style: TextStyle(
+                    fontSize: 30,
+                  ),
+                ),
+               ),
               SizedBox(
                 height: he * 0.03,
               ),
@@ -91,10 +93,12 @@ class _menuPageState extends State<menuPage>{
               //         builder: (context) => settingsPage(),
               //       ));
               //   },
-              //    child: Text('Settings',
-              //       style: TextStyle(
-              //         fontSize: 30,
-              //       )),
+              //    child: 
+              Text('Settings',
+                    style: TextStyle(
+                      fontSize: 30,
+                    ),
+              ),
               //  ),
               SizedBox(
                 height: he * 0.03,
