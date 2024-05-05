@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:tma/widgets/constant.dart';
 
 class DatePicker extends StatefulWidget{
   const DatePicker({super.key});
@@ -28,7 +29,30 @@ Widget build(BuildContext context){
           selectedDay=index;
         });
       },
-    ), separatorBuilder: (_, Index)=>const SizedBox(
+      child:Container(
+        padding: const EdgeInsets.only(
+          right: 10,left: 10,bottom: 10,top: 25),
+          margin:const EdgeInsets.symmetric(horizontal: 0.5),
+          decoration: BoxDecoration(
+            color: selectedDay == index? Colors.grey.withOpacity(0.3):null,
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Column(
+            children: [
+              Text(weekDays[index],style: const TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold
+              ),),
+              const SizedBox(height: 5,),
+              Text(day[index],style: const TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.w500
+              ),),
+            ],
+          ),
+      ),
+    ), 
+    separatorBuilder: (_, Index)=>const SizedBox(
       width: 10,
     ), itemCount: weekDays.length),
   );

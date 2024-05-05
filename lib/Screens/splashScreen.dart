@@ -16,14 +16,14 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-          backgroundColor: Color.fromARGB(255, 127, 209, 178),
+          backgroundColor:kwhite,
       body: Center(
         child:SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(20),
               child: Image.asset('assets/pic1.jpg'), // screenimage
             ),
             SizedBox(width: 10), // Adjust the spacing as needed
