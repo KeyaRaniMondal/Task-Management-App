@@ -14,9 +14,39 @@ class TaskTimeLine extends StatelessWidget{
       ),
       child: Row(
         children: [
-          _buildTimeLine(detail['tlColor'])
+          _buildTimeLine(detail['tlColor']),
+          Expanded(child:
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                detail['time'],
+                style: TextStyle(color: Colors.grey,fontSize: 15),
+              ),
+              detail['title'].isNotEmpty
+              ?_buildCard(
+                detail['bgColor'],detail['title'],detail['slot'])
+                :_buildCard(Colors.white,'','')
+            ]
+          ))
         ],
       ),
+    );
+  }
+
+  Widget _buildCard(Color bgColor,String title,String slot){
+    return Container(
+width: 250,
+height: 100,
+decoration: BoxDecoration(
+  color: bgColor,
+  borderRadius: BorderRadius.only(
+    topLeft: Radius.circular(10),
+    bottomLeft: Radius.circular(10),
+    bottomRight: Radius.circular(10),
+  ),
+),
     );
   }
   Widget _buildTimeLine(Color color){

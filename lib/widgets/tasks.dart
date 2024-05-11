@@ -2,6 +2,7 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:tma/modals/Task_modal.dart';
 import 'package:tma/widgets/constant.dart';
+import 'package:tma/widgets/detail.dart';
 
 class Tasks extends StatelessWidget{
   final taskList=Task.generateTasks();
@@ -38,7 +39,12 @@ Widget _buildAddTask(){
 }
 
 Widget _buildTask(BuildContext context,Task taskList){
-  return Container(
+  return GestureDetector(
+    onTap: (){
+      Navigator.push(context, 
+      MaterialPageRoute(builder: (context)=> DetailPage(taskList)));
+    },
+    child:Container(
     padding: const EdgeInsets.all(15),
     decoration: BoxDecoration(color: taskList.bgcolor,
     borderRadius: BorderRadius.circular(10)
@@ -77,7 +83,8 @@ Widget _buildTask(BuildContext context,Task taskList){
       ],
     ),
       ],
-  ));
+  ))
+  );
 }
 
  Widget _buildTaskStatus(Color bgcolor, Color txtColor, String txt) {

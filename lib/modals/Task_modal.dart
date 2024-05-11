@@ -44,8 +44,8 @@ class Task{
               'time':'10:00 AM',
               'title':'Task 2',
               'slot':'10:00 AM - 11:00 AM',
-              'tlColor':kRedDark,
-              'bgColor':kRedLight,
+              'tlColor':kBlueDark,
+              'bgColor':kBlueLight,
             },
                           {
               'time':'11:00 AM',
