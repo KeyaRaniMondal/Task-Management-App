@@ -49,7 +49,7 @@ class Task{
             },
                           {
               'time':'11:00 AM',
-              'title':'Task 1',
+              'title':'Task 3',
               'slot':'11:00 AM - 12:00 AM',
               'tlColor':kRedDark,
               'bgColor':kRedLight,
